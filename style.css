@@ -1,0 +1,83 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.input-fields {
+    margin-bottom: 20px;
+}
+
+.input-fields label {
+    margin-right: 5px;
+}
+
+.input-fields input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.timer {
+    font-size: 5em;
+    font-weight: bold;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+    /* Стили для экранов меньше 768px (обычно мобильные телефоны) */
+    @media (max-width: 768px) {
+        .timer {
+            font-size: 3em; /* Меньше размер цифр на телефоне */
+        }
+
+        .input-fields input {
+            width: 40px; /* Меньше ширина полей ввода */
+        }
+
+        .controls button {
+            font-size: 1em; /* Меньше размер кнопок */
+            padding: 5px 10px; /* Меньше отступы кнопок */
+        }
+    }
+
+    /* Стили для экранов больше 768px (планшеты и компьютеры) */
+    @media (min-width: 769px) {
+        /* Здесь ваши стили для больших экранов */
+    }
+

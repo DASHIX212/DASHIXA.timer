@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратный отсчет RGB Таймер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Установите время для обратного отсчета</h1>
+        <div class="input-fields">
+            <label for="hoursInput">Часы:</label>
+            <input type="number" id="hoursInput" min="0" value="0">
+            <label for="minutesInput">Минуты:</label>
+            <input type="number" id="minutesInput" min="0" max="59" value="0">
+            <label for="secondsInput">Секунды:</label>
+            <input type="number" id="secondsInput" min="0" max="59" value="10">
+            <button id="setTime">Установить время</button>
+        </div>
+        <img src="image-small.jpg"
+        srcset="image-small.jpg 480w,
+                image-medium.jpg 800w,
+                image-large.jpg 1200w"
+        alt="Описание изображения">
+        <div class="timer">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Старт</button>
+            <button id="pause">Пауза</button>
+            <button id="reset">Сброс</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
